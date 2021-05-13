@@ -1,0 +1,43 @@
+body{
+    font-family: MTS, sans-serif;
+}
+
+*{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    .header-top{
+        .header-top__left{
+            .logo{
+                img{
+                    width: 180px;
+                }
+            }
+            .menu{
+                margin-bottom: 0;
+                li{
+                    margin-right: 7px;
+                    font-size: 18px;
+                    a{
+                        color:black;
+                    }
+                }
+            }
+        }
+    }
+    .header-body{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .btn{
+            position: absolute;
+            left:20px;
+            bottom: 10px;
+        }
+    }
+}
