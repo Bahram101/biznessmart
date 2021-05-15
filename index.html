@@ -5,15 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>MTC</title>
+    <title>Бизнессмарт</title>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <div class="header-top d-flex justify-content-around">
+        <div class="header-top d-flex justify-content-between">
             <div class="header-top__left d-flex">
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
@@ -33,11 +35,141 @@
         </div>
     </div>
     <div class="header-body">
-        <img src="img/header.jpg" alt="">
         <button class="btn btn-danger">Оформить карту</button>
     </div>
 </header>
 
+<div id="findout-limit">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 card-block">
+                <h4 class="mb-3">MTC Деньги Weekend</h4>
+                <small>Максимальный лимит</small>
+                <h4 class="mb-3">299999</h4>
+                <small>Кэшбэк рублями</small>
+                <h5>до 5%</h5>
+                <img src="img/card.jpg" alt="">
+            </div>
+            <div class="col-md-8 form">
+                <form action="">
+                    <h3>Узнай свой кредитный лимит</h3>
+                    <input type="text" placeholder="Введите название либо инн вашей компании">
+                    <button class="btn btn-light findOutLimitBtn">Узнать лимит</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="our-offers">
+    <div class="container">
+        <h2 href="">Наши лучшие предложения</h2>
+        <div class="offer-items owl-carousel owl-theme">
+            <div class="item clearfix">
+                <div class="img-block">
+                    <img src="img/offer3.png" alt="">
+                </div>
+                <div class="item-bottom">
+                    <div>
+                        <div class="title">Кредитьна карта МТС деньги Zero</div>
+                        <ul>
+                            <li>Наличные с кредитной карты без комиссий</li>
+                            <li>0% годовых</li>
+                            <li>Моментальное одобрение</li>
+                        </ul>
+                        <button class="findOutLimitBtn">Узнать лимит</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="img/precent3.png" alt="">
+                </div>
+                <div class="item-bottom">
+                    <div class="title">Кредитьна карта МТС деньги Zero</div>
+                    <ul>
+                        <li>Наличные с кредитной карты без комиссий</li>
+                        <li>0% годовых</li>
+                        <li>Моментальное одобрение</li>
+                    </ul>
+                    <button class="findOutLimitBtn">Узнать лимит</button>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="img/pasport3.png" alt="">
+                </div>
+                <div class="item-bottom">
+                    <div class="title">Кредитьна карта МТС деньги Zero</div>
+                    <ul>
+                        <li>Наличные с кредитной карты без комиссий</li>
+                        <li>0% годовых</li>
+                        <li>Моментальное одобрение</li>
+                    </ul>
+                    <button class="findOutLimitBtn">Узнать лимит</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="img/offer3.png" alt="">
+                </div>
+                <div class="item-bottom">
+                    <div class="title">Кредитьна карта МТС деньги Zero</div>
+                    <ul>
+                        <li>Наличные с кредитной карты без комиссий</li>
+                        <li>0% годовых</li>
+                        <li>Моментальное одобрение</li>
+                    </ul>
+                    <button class="findOutLimitBtn">Узнать лимит</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img-block">
+                    <img src="img/offer3.png" alt="">
+                </div>
+                <div class="item-bottom">
+                    <div class="title">Кредитьна карта МТС деньги Zero</div>
+                    <ul>
+                        <li>Наличные с кредитной карты без комиссий</li>
+                        <li>0% годовых</li>
+                        <li>Моментальное одобрение</li>
+                    </ul>
+                    <button class="findOutLimitBtn">Узнать лимит</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+
+    $('.offer-items').owlCarousel({
+        // loop:true,
+        dots:false,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            400:{
+                items:2
+            },
+           /* 768:{
+                items:3
+            },*/
+            992:{
+                items:3
+            }
+
+        }
+    })
+
+</script>
 </body>
 </html>
