@@ -255,7 +255,7 @@ header{
                 }
                 a{
                     margin-left: 15px;
-                    color:#379AC5;
+                    color:#329ACA;
                 }
                 p{
                     font-size:12px;
@@ -294,16 +294,51 @@ header{
             margin-bottom: 12px;
             font-size: 17px;
             margin-top: 10px;
+            margin-left: 7px;
+        }
+        .text{
+            margin-left: 7px;
         }
         &:before{
             content:"";
             width:73%;
-            height:2px;
+            height:1px;
             background: #E2E5EB;
             position: absolute;
             top: 23px;
             right: 0;
             z-index: -1;
         }
+    }
+}
+
+#whatNeed{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #F2F3F7;
+    h3{
+        font-weight: 900;
+        margin-bottom: 25px;
+    }
+    .row{
+        margin-bottom: 45px;
+        .item{
+            padding:32px;
+            box-shadow: rgb(0 0 0 / 10%) 0px 20px 30px, rgb(0 0 0 / 12%) 0px 0px 8px;
+            background: #fff;
+            width:31%;
+            margin-right: 3%;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            &:last-child{
+                margin-right:0
+            }
+        }
+    }
+
+    span{
+        color:rgb(150, 159, 168);
+        font-size: 14px;
     }
 }

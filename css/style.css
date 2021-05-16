@@ -227,7 +227,7 @@ header .header-body .btn {
 }
 #calculator .container .creditResult .result-bottom a {
   margin-left: 15px;
-  color: #379AC5;
+  color: #329ACA;
 }
 #calculator .container .creditResult .result-bottom p {
   font-size: 12px;
@@ -270,14 +270,47 @@ header .header-body .btn {
   margin-bottom: 12px;
   font-size: 17px;
   margin-top: 10px;
+  margin-left: 7px;
+}
+#simpleSteps .col-md-3 .text {
+  margin-left: 7px;
 }
 #simpleSteps .col-md-3:before {
   content: "";
   width: 73%;
-  height: 2px;
+  height: 1px;
   background: #E2E5EB;
   position: absolute;
   top: 23px;
   right: 0;
   z-index: -1;
+}
+
+#whatNeed {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F2F3F7;
+}
+#whatNeed h3 {
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+#whatNeed .row {
+  margin-bottom: 45px;
+}
+#whatNeed .row .item {
+  padding: 32px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 0px 8px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 0px 8px;
+  background: #fff;
+  width: 31%;
+  margin-right: 3%;
+  border-radius: 5px;
+}
+#whatNeed .row .item:last-child {
+  margin-right: 0;
+}
+#whatNeed span {
+  color: #969fa8;
+  font-size: 14px;
 }
