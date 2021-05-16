@@ -46,47 +46,47 @@ header .header-body .btn {
   border-radius: 9px;
 }
 
-#findout-limit {
+.findout-limit {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-#findout-limit .card-block {
+.findout-limit .card-block {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 7px;
   padding: 20px;
   position: relative;
 }
-#findout-limit .card-block h4 {
+.findout-limit .card-block h4 {
   font-weight: bold;
 }
-#findout-limit .card-block h5 {
+.findout-limit .card-block h5 {
   font-weight: bold;
 }
-#findout-limit .card-block small {
+.findout-limit .card-block small {
   color: #95a5a6;
 }
-#findout-limit .card-block img {
+.findout-limit .card-block img {
   width: 30%;
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-#findout-limit .form {
+.findout-limit .form {
   padding: 10px 0 0 50px;
 }
-#findout-limit .form form h3 {
+.findout-limit .form form h3 {
   font-weight: bold;
   margin-bottom: 25px;
 }
-#findout-limit .form form input {
+.findout-limit .form form input {
   border: 1px solid #DEE1E3;
   padding: 15px 20px;
   border-radius: 7px;
   width: 100%;
   margin-bottom: 10px;
 }
-#findout-limit .form form .findOutLimitBtn {
+.findout-limit .form form .findOutLimitBtn {
   background: #E1E5EA;
   padding: 15px 33px;
   font-size: 17px;
@@ -132,6 +132,9 @@ header .header-body .btn {
 #our-offers .offer-items .item .item-bottom .title {
   font-weight: bold;
 }
+#our-offers .offer-items .item .item-bottom ul {
+  padding-left: 18px;
+}
 #our-offers .offer-items .item .item-bottom ul li {
   margin-bottom: 10px;
   color: #6E7782;
@@ -159,4 +162,122 @@ header .header-body .btn {
 #our-offers .offer-items .owl-nav .owl-next span {
   padding: 10px 10px 10px 5px;
   font-size: 30px;
+}
+
+#calculator {
+  padding-top: 30px;
+}
+#calculator .container {
+  border: 2px solid #F9F9F9;
+  border-radius: 7px;
+  padding: 20px 35px 20px 20px;
+}
+#calculator .container .cashLoan {
+  background: #F9F9F9;
+  padding: 7px;
+  border-radius: 7px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#calculator .container h4 {
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+#calculator .container .inputs .form-label {
+  margin-bottom: 0;
+}
+#calculator .container .inputs input {
+  border: 2px solid #e6e9ec;
+}
+#calculator .container .creditResult {
+  background: #F5F7F8;
+  padding: 20px;
+  border-radius: 5px;
+}
+#calculator .container .creditResult .result-top .monthlyPayment {
+  margin-right: 30px;
+}
+#calculator .container .creditResult .result-top .monthlyPayment .digits {
+  font-size: 32px;
+  font-weight: 700;
+}
+#calculator .container .creditResult .result-top .monthlyPayment .title {
+  color: #84898C;
+  font-size: 14px;
+}
+#calculator .container .creditResult .result-top .rate .precent {
+  font-size: 32px;
+  font-weight: 700;
+}
+#calculator .container .creditResult .result-top .rate .title {
+  color: #84898C;
+  font-size: 14px;
+}
+#calculator .container .creditResult .result-bottom {
+  margin-top: 20px;
+}
+#calculator .container .creditResult .result-bottom button {
+  border: none;
+  background: #EA232D;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+#calculator .container .creditResult .result-bottom a {
+  margin-left: 15px;
+  color: #379AC5;
+}
+#calculator .container .creditResult .result-bottom p {
+  font-size: 12px;
+  color: #CDD2D7;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#simpleSteps {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#simpleSteps h3 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#simpleSteps .col-md-3 {
+  position: relative;
+}
+#simpleSteps .col-md-3 .step {
+  width: 40px;
+  height: 40px;
+  background: #E2E5EB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 19px;
+  margin: 5px;
+}
+#simpleSteps .col-md-3 .title {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 17px;
+  margin-top: 10px;
+}
+#simpleSteps .col-md-3:before {
+  content: "";
+  width: 73%;
+  height: 2px;
+  background: #E2E5EB;
+  position: absolute;
+  top: 23px;
+  right: 0;
+  z-index: -1;
 }
