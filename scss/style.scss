@@ -1,5 +1,5 @@
+
 body{
-    font-family: MTS, sans-serif;
     color:#1F2D3D;
 }
 
@@ -100,7 +100,7 @@ header{
             }
             .findOutLimitBtn{
                 background: #E1E5EA;
-                padding: 15px 33px;
+                padding: 13px 30px;
                 font-size: 17px;
                 font-weight: bold;
                 margin-top: 17px;
@@ -322,23 +322,80 @@ header{
     }
     .row{
         margin-bottom: 45px;
-        .item{
-            padding:32px;
-            box-shadow: rgb(0 0 0 / 10%) 0px 20px 30px, rgb(0 0 0 / 12%) 0px 0px 8px;
-            background: #fff;
-            width:31%;
-            margin-right: 3%;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            &:last-child{
-                margin-right:0
+        .col-md-4{
+            .item{
+                padding:32px;
+                box-shadow: 0 20px 30px rgb(0 0 0 / 10%), 0 0 8px rgb(0 0 0 / 12%);
+                background: #fff;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+                &:last-child{
+                    margin-right:0
+                }
+                .title{
+                    margin-bottom: 16px;
+                }
+                /*.icon{
+                    background: lightgray;
+                    padding: 10px;
+                    display: inline-block;
+                    border-radius: 35%;
+                }*/
             }
+
         }
     }
-
     span{
         color:rgb(150, 159, 168);
         font-size: 14px;
+    }
+}
+
+#about{
+    h2{
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    .text-item{
+        position: relative;
+        &:before{
+            content: "";
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            top: 13px;
+            left: -14px;
+            border-radius: 50%;
+            background: #EA222F;
+        }
+        .title{
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+    .slider-block{
+        .our-teams{
+
+            .our-teams__item{
+                .title{
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
+                .speciality{
+                    color:#969fa8;
+                    margin-top: 7px;
+                }
+            }
+            .owl-dots{
+                button{
+                    width: 15px;
+                    span{
+                        width:7px;
+                        height: 7px;
+                    }
+                }
+            }
+        }
     }
 }

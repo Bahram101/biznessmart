@@ -1,5 +1,4 @@
 body {
-  font-family: MTS, sans-serif;
   color: #1F2D3D;
 }
 
@@ -88,7 +87,7 @@ header .header-body .btn {
 }
 .findout-limit .form form .findOutLimitBtn {
   background: #E1E5EA;
-  padding: 15px 33px;
+  padding: 13px 30px;
   font-size: 17px;
   font-weight: bold;
   margin-top: 17px;
@@ -298,19 +297,63 @@ header .header-body .btn {
 #whatNeed .row {
   margin-bottom: 45px;
 }
-#whatNeed .row .item {
+#whatNeed .row .col-md-4 .item {
   padding: 32px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 0px 8px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 0px 8px;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.12);
   background: #fff;
-  width: 31%;
-  margin-right: 3%;
   border-radius: 5px;
+  /*.icon{
+      background: lightgray;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 35%;
+  }*/
 }
-#whatNeed .row .item:last-child {
+#whatNeed .row .col-md-4 .item:last-child {
   margin-right: 0;
+}
+#whatNeed .row .col-md-4 .item .title {
+  margin-bottom: 16px;
 }
 #whatNeed span {
   color: #969fa8;
   font-size: 14px;
+}
+
+#about h2 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#about .text-item {
+  position: relative;
+}
+#about .text-item:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 13px;
+  left: -14px;
+  border-radius: 50%;
+  background: #EA222F;
+}
+#about .text-item .title {
+  font-weight: 700;
+  font-size: 20px;
+}
+#about .slider-block .our-teams .our-teams__item .title {
+  font-weight: 700;
+  margin-top: 10px;
+}
+#about .slider-block .our-teams .our-teams__item .speciality {
+  color: #969fa8;
+  margin-top: 7px;
+}
+#about .slider-block .our-teams .owl-dots button {
+  width: 15px;
+}
+#about .slider-block .our-teams .owl-dots button span {
+  width: 7px;
+  height: 7px;
 }
