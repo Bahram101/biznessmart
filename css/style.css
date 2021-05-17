@@ -164,7 +164,7 @@ header .header-body .btn {
 }
 
 #calculator {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 #calculator .container {
   border: 2px solid #F9F9F9;
@@ -321,6 +321,9 @@ header .header-body .btn {
   font-size: 14px;
 }
 
+#about {
+  padding-bottom: 40px;
+}
 #about h2 {
   font-weight: 900;
   margin-bottom: 20px;
@@ -382,7 +385,25 @@ header .header-body .btn {
   color: white;
   margin-right: 10px;
 }
-#trust .tab-content .tab-pane .item {
+#trust .tab-content {
+  position: relative;
+}
+#trust .tab-content .trust-items .owl-nav {
+  position: absolute;
+  top: -70px;
+  right: 20px;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 7px 15px rgba(0, 0, 0, 0.17);
+}
+#trust .tab-content .trust-items .owl-nav .owl-prev span {
+  padding: 10px 5px 10px 10px;
+  font-size: 30px;
+}
+#trust .tab-content .trust-items .owl-nav .owl-next span {
+  padding: 10px 10px 10px 5px;
+  font-size: 30px;
+}
+#trust .tab-content .trust-items .item {
   background: #fff;
   margin-right: 20px;
   padding: 20px;
@@ -392,8 +413,43 @@ header .header-body .btn {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-#trust .tab-content .tab-pane .item .title {
+#trust .tab-content .trust-items .item .title {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 7px;
+}
+
+#contact {
+  padding: 50px 0;
+}
+#contact h2 {
+  font-weight: 900;
+}
+#contact .nav {
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+#contact .nav .nav-link {
+  border-radius: 30px;
+  background: #E2E5EB;
+  color: black;
+  margin-right: 10px;
+  padding: 2px 10px 5px;
+}
+#contact .nav .nav-link.active {
+  background: #E30611;
+  color: white;
+  margin-right: 10px;
+}
+#contact .tab-content .tab-pane .address {
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  padding: 25px;
+}
+#contact .tab-content .tab-pane .address h4 {
+  margin-bottom: 14px;
+}
+#contact .tab-content .tab-pane .address span {
+  color: #CC9955;
 }

@@ -190,7 +190,7 @@ header{
 }
 
 #calculator{
-    padding-top: 30px;
+    padding-top: 50px;
     .container{
         border: 2px solid #F9F9F9;
         border-radius: 7px;
@@ -353,6 +353,7 @@ header{
 }
 
 #about{
+    padding-bottom: 40px;
     h2{
         font-weight: 900;
         margin-bottom: 20px;
@@ -425,8 +426,28 @@ header{
             }
         }
     }
+
     .tab-content{
-        .tab-pane{
+        position: relative;
+        .trust-items{
+            .owl-nav{
+                position: absolute;
+                top: -70px;
+                right: 20px;
+                box-shadow: 0 7px 15px rgb(0 0 0 / 17%);
+                .owl-prev{
+                    span{
+                        padding:10px 5px 10px 10px;
+                        font-size:30px;
+                    }
+                }
+                .owl-next{
+                    span{
+                        padding:10px 10px 10px 5px;
+                        font-size:30px;
+                    }
+                }
+            }
             .item{
                 background: #fff;
                 margin-right:20px;
@@ -442,6 +463,47 @@ header{
                 }
             }
 
+        }
+    }
+
+}
+
+#contact{
+    padding: 50px 0;
+    h2{
+        font-weight: 900;
+    }
+    .nav{
+        margin-top: 30px;
+        margin-bottom: 30px !important;
+        .nav-link{
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            background: #E2E5EB;
+            color:black;
+            margin-right:10px;
+            padding:2px 10px 5px;
+            &.active{
+                background: #E30611;
+                color:white;
+                margin-right:10px;
+            }
+        }
+    }
+    .tab-content{
+        .tab-pane{
+            .address{
+                box-shadow: 0 3px 15px rgb(0 0 0 / 18%);
+                border-radius: 5px;
+                padding: 25px;
+                h4{
+                    margin-bottom: 14px;
+                }
+                span{
+                    color:#CC9955;
+                }
+            }
         }
     }
 }
