@@ -4,14 +4,17 @@ body{
 }
 
 *{
-    //list-style: none;
+    list-style: none;
 }
 a{
     text-decoration: none;
+    color:#000;
 }
 
 header{
     .header-top{
+        margin-bottom: 10px;
+        margin-top: 10px;
         .header-top__left{
             .logo{
                 img{
@@ -39,24 +42,25 @@ header{
             }
         }
     }
+
     .header-body{
         background-image: url(../img/header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
         position: relative;
-        img{
-            width: 100%;
+        .container{
+            position: relative;
+            height:inherit;
+            .btn{
+                background: #EA232D;
+                position: absolute;
+                bottom: 15px;
+                border-radius: 7px;
+                padding: 8px 20px;
+            }
         }
-        .btn{
-            position: absolute;
-            left:20px;
-            bottom: 10px;
-            padding:10px 20px;
-            -webkit-border-radius: 9px;
-            -moz-border-radius: 9px;
-            border-radius: 9px;
-        }
+
     }
 }
 
@@ -126,7 +130,7 @@ header{
             margin-right: 10px;
             margin-left: 10px;
             margin-bottom: 25px;
-            padding:15px;
+            //padding:20px;
             margin-top: 30px;
             -webkit-box-shadow: 0 13px 13px rgba(0 0 0 / 8%);
             -moz-box-shadow: 0 13px 13px rgba(0 0 0 / 8%);
@@ -136,18 +140,24 @@ header{
             .img-block{
                 img{
                     display: block;
-                    position: absolute;
+                    //position: absolute;
                     top: -20px;
                     z-index: 0;
                     left: 50%;
                     transform: translateX(-50%);
                     width: 70%;
+                    position: relative;
                 }
             }
             .item-bottom{
-                margin-top: 120px;
+                position: relative;
+                top:-38px;
+                background: white;
+                border-top:2px solid #EA232D;
+                padding:20px 20px 0 20px;
                 .title{
                     font-weight: bold;
+                    margin-bottom: 10px;
                 }
                 ul{
                     padding-left: 18px;
@@ -155,14 +165,25 @@ header{
                         margin-bottom: 10px;
                         color:#6E7782;
                         font-size: 15px;
+                        position: relative;
+                        &:before{
+                            content: " ";
+                            width: 5px;
+                            height: 5px;
+                            position: absolute;
+                            top: 8px;
+                            left: -14px;
+                            border-radius: 50%;
+                            background: #6E7782;
+                        }
                     }
                 }
                 .findOutLimitBtn{
                     background: #F1F3F6;
                     border:none;
-                    padding: 10px 13px;
+                    padding: 8px 13px;
                     font-weight: bold;
-                    border-radius:7px;
+                    border-radius: 3px;
                     background: #E1E5EA;
                 }
             }
@@ -173,15 +194,29 @@ header{
             right: 20px;
             box-shadow: 0 7px 15px rgb(0 0 0 / 17%);
             .owl-prev{
+                background: none;
                 span{
                     padding:10px 5px 10px 10px;
                     font-size:30px;
                 }
+                &:hover{
+                    background: none;
+                }
+                &:hover span{
+                    color:black;
+                }
             }
             .owl-next{
+                background: none;
                 span{
                     padding:10px 10px 10px 5px;
                     font-size:30px;
+                }
+                &:hover{
+                    background: none;
+                }
+                &:hover  span{
+                    color:black;
                 }
             }
         }
@@ -316,9 +351,9 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
     background: #F2F3F7;
-    h3{
+    h2{
         font-weight: 900;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     .row{
         margin-bottom: 45px;
@@ -440,11 +475,23 @@ header{
                         padding:10px 5px 10px 10px;
                         font-size:30px;
                     }
+                    &:hover{
+                        background: none;
+                    }
+                    &:hover  span{
+                        color:black;
+                    }
                 }
                 .owl-next{
                     span{
                         padding:10px 10px 10px 5px;
                         font-size:30px;
+                    }
+                    &:hover{
+                        background: none;
+                    }
+                    &:hover  span{
+                        color:black;
                     }
                 }
             }
@@ -506,4 +553,76 @@ header{
             }
         }
     }
+}
+
+#footer{
+    .footer-top{
+        border-bottom:1px solid #EBEEF0;
+        .row1{
+            margin-bottom: 30px;
+            .telNumber{
+                span{
+                    font-size: 13px;
+                }
+            }
+            .telNumber{
+                a{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color:#000;
+                }
+            }
+            .socialIcons{
+                justify-content: flex-end;
+                a{
+                    margin-left: 10px;
+                    padding: 10px;
+                    background: #E2E5EB;
+                    color: black;
+                    width: 42px;
+                    border-radius: 50%;
+                    height: 42px;
+                }
+            }
+        }
+        .row2{
+            padding-bottom: 20px;
+            ul{
+                padding-left: 0;
+                li{
+                    margin-bottom: 4px;
+                    a{
+                        color: rgb(98,108,119);
+                    }
+                    &:first-child{
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        padding: 20px 0;
+        .row3{
+            button{
+                border: none;
+                padding: 8px 15px;
+                border-radius: 7px;
+                background: #E2E5EB;
+                font-weight: 500;
+            }
+            .copyright{
+                margin-top: 20px;
+                font-size: 12px;
+                color: rgb(98,108,119);
+            }
+            p{
+                font-size: 12px;
+                color: rgb(98,108,119);
+                margin-bottom: 10px;
+            }
+        }
+    }
+
 }
