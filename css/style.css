@@ -357,3 +357,43 @@ header .header-body .btn {
   width: 7px;
   height: 7px;
 }
+
+#trust {
+  background: #F2F3F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#trust h2 {
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+#trust ul {
+  margin-bottom: 25px !important;
+}
+#trust ul .nav-link {
+  border-radius: 30px;
+  background: #E2E5EB;
+  color: black;
+  margin-right: 10px;
+  padding: 2px 10px 5px;
+}
+#trust ul .nav-link.active {
+  background: #E30611;
+  color: white;
+  margin-right: 10px;
+}
+#trust .tab-content .tab-pane .item {
+  background: #fff;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+#trust .tab-content .tab-pane .item .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
