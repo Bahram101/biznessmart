@@ -23,7 +23,7 @@
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <ul class="menu d-flex align-items-center">
+                <ul class="menu align-items-center">
                     <li><a href="">Кредиты</a></li>
                     <li><a href="">Карты</a></li>
                     <li><a href="">Ипотека</a></li>
@@ -35,11 +35,20 @@
             <div class="header-top__right">
                 <button class="btn btn-outline-secondary btn-sm">Онлайн заявка</button>
             </div>
+            <div class="burger d-md-none d-flex align-items-center">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </div>
     <div class="header-body">
         <div class="container">
-            <button class="btn btn-danger">Оформить карту</button>
+            <div class="overlay">
+                <div class="title">
+                    <h1>Кредит на все от 6,9%</h1>
+                    <p>Новый год - время возможностей</p>
+                </div>
+                <button class="btn btn-danger">Оформить карту</button>
+            </div>
         </div>
     </div>
 </header>
@@ -162,7 +171,7 @@
             <div class="col-md-6 creditResult">
                 <div class="result-top d-flex">
                     <div class="monthlyPayment">
-                        <div class="digits">35529P</div>
+                        <div class="digits">35529 <i class="fas fa-ruble-sign"></i></div>
                         <div class="title">Ежемесячный платеж</div>
                     </div>
                     <div class="rate">
@@ -465,7 +474,7 @@
                 </div>
             </div>
             <div class="row row2">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                     <ul class="cats">
                         <li>
                             МТС Банк
@@ -484,7 +493,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                     <ul class="cats">
                         <li>
                             МТС Банк
@@ -503,7 +512,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                     <ul class="cats">
                         <li>
                             МТС Банк
@@ -522,7 +531,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6">
                     <ul class="cats">
                         <li>
                             МТС Банк
@@ -548,7 +557,7 @@
         <div class="container">
             <div class="row row3">
                 <div class="col-md-6 d-flex flex-column justify-content-center">
-                    <div class="tore">
+                    <div class="store">
                         <button class="appstore">
                             <i class="fab fa-apple"></i>
                             <span>App Store</span>
@@ -590,7 +599,7 @@
             0:{
                 items:1
             },
-            400:{
+            500:{
                 items:2
             },
             992:{

@@ -20,11 +20,17 @@ header .header-top .header-top__left .logo img {
 }
 header .header-top .header-top__left .menu {
   margin-bottom: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 header .header-top .header-top__left .menu li {
   margin-right: 15px;
   font-size: 17px;
   list-style: none;
+  font-weight: 700;
 }
 header .header-top .header-top__left .menu li a {
   color: #1F2D3D;
@@ -36,23 +42,45 @@ header .header-top .header-top__right .btn {
   border-radius: 7px;
   font-weight: bold;
 }
-header .header-body {
+header .header-body .container {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
   position: relative;
+  background-position: center;
 }
-header .header-body .container {
-  position: relative;
-  height: inherit;
+header .header-body .container .overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
-header .header-body .container .btn {
+header .header-body .container .overlay .title {
+  position: absolute;
+  top: 25%;
+  left: 35px;
+}
+header .header-body .container .overlay .title h1 {
+  font-weight: 900;
+  color: white;
+}
+header .header-body .container .overlay .title p {
+  font-weight: 700;
+  color: white;
+}
+header .header-body .container .overlay .btn {
   background: #EA232D;
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   border-radius: 7px;
   padding: 8px 20px;
+  left: 35px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
 }
 
 .findout-limit {
@@ -243,6 +271,9 @@ header .header-body .container .btn {
 #calculator .container .creditResult .result-top .monthlyPayment .digits {
   font-size: 32px;
   font-weight: 700;
+}
+#calculator .container .creditResult .result-top .monthlyPayment .digits .fa-ruble-sign {
+  font-size: 27px;
 }
 #calculator .container .creditResult .result-top .monthlyPayment .title {
   color: #84898C;
@@ -572,4 +603,120 @@ header .header-body .container .btn {
   font-size: 12px;
   color: #626c77;
   margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #whatNeed .col-md-4:nth-of-type(2) .item {
+    height: 161px;
+  }
+}
+@media (max-width: 767px) {
+  .header-top .header-top__left .menu {
+    display: none !important;
+  }
+
+  .findout-limit .card-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .findout-limit .col-md-8 {
+    padding: 0;
+    margin-top: 20px !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .findout-limit .col-md-8 input {
+    padding: 11px 17px !important;
+  }
+  .findout-limit .col-md-8 button {
+    padding: 10px 20px !important;
+  }
+
+  #our-offers {
+    padding-bottom: 15px;
+  }
+  #our-offers .offer-items .owl-nav {
+    top: -55px;
+  }
+
+  #simpleSteps {
+    /* .col-md-3:nth-of-type(3):after{
+         content:"" !important;
+     }*/
+  }
+  #simpleSteps .col-md-3 {
+    margin-bottom: 15px;
+  }
+  #simpleSteps .col-md-3 .step {
+    float: left;
+    margin-right: 15px;
+  }
+  #simpleSteps .col-md-3 .title {
+    margin-bottom: 5px;
+  }
+  #simpleSteps .col-md-3 .text {
+    margin-left: 60px;
+  }
+  #simpleSteps .col-md-3:before {
+    content: "";
+    width: 1px;
+    height: 40%;
+    background: #E2E5EB;
+    position: absolute;
+    top: 53px;
+    left: 37px;
+    z-index: -1;
+  }
+
+  #whatNeed .row {
+    margin-bottom: 10px;
+  }
+  #whatNeed .row .col-md-4 {
+    margin-bottom: 25px;
+  }
+
+  #about .col-md-6:nth-of-type(1) {
+    padding-left: 25px;
+  }
+
+  #trust ul li {
+    margin-bottom: 10px;
+  }
+
+  #contact .tab-content .tab-pane .col-md-5 {
+    margin-bottom: 20px;
+  }
+
+  #footer .row1 .telNumber {
+    text-align: center;
+  }
+  #footer .row1 .socialIcons {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #footer .row1 .socialIcons a {
+    margin-bottom: 7px;
+  }
+  #footer .footer-bottom .row {
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #calculator .container {
+    padding: 20px;
+  }
+  #calculator .container .creditResult {
+    width: 95%;
+    margin: 30px auto;
+  }
+}
+@media (max-width: 575px) {
+  #calculator .creditResult {
+    width: 90%;
+    margin: 25px auto;
+  }
 }
