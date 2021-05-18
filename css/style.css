@@ -1,5 +1,6 @@
 body {
   color: #1F2D3D;
+  margin: 0;
 }
 
 * {
@@ -11,9 +12,13 @@ a {
   color: #000;
 }
 
+a:visited, a:active {
+  color: black;
+}
+
 header .header-top {
   margin-bottom: 10px;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 header .header-top .header-top__left .logo img {
   width: 180px;
@@ -36,7 +41,7 @@ header .header-top .header-top__left .menu li a {
   color: #1F2D3D;
 }
 header .header-top .header-top__right {
-  line-height: 55px;
+  line-height: 50px;
 }
 header .header-top .header-top__right .btn {
   border-radius: 7px;
@@ -238,7 +243,7 @@ header .header-body .container .overlay .btn {
   padding-top: 50px;
 }
 #calculator .container {
-  border: 2px solid #F9F9F9;
+  border: 2px solid #e6e9ec;
   border-radius: 7px;
   padding: 20px 35px 20px 20px;
 }
@@ -254,11 +259,60 @@ header .header-body .container .overlay .btn {
   font-weight: 900;
   margin-bottom: 13px;
 }
-#calculator .container .inputs .form-label {
+#calculator .container .inputs .mb-3 {
+  position: relative;
+}
+#calculator .container .inputs .mb-3 .form-label {
   margin-bottom: 0;
 }
-#calculator .container .inputs input {
+#calculator .container .inputs .mb-3 input {
   border: 2px solid #e6e9ec;
+  outline: none;
+}
+#calculator .container .inputs .mb-3 input:focus, #calculator .container .inputs .mb-3 input:active, #calculator .container .inputs .mb-3 input:hover {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+#calculator .container .inputs .mb-3 .inputRange {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 97%;
+  height: 2px;
+  background: #EA232D;
+  outline: none;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border: none;
+  right: 0;
+  position: absolute;
+  bottom: 0.1px;
+  right: 2px;
+}
+#calculator .container .inputs .mb-3 .inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #EA232D;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #EA232D;
+  padding: 5px;
+}
+#calculator .container .inputs .mb-3 .inputRange::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #EA232D;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #EA232D;
+  padding: 5px;
 }
 #calculator .container .creditResult {
   background: #F5F7F8;
@@ -605,6 +659,256 @@ header .header-body .container .overlay .btn {
   margin-bottom: 10px;
 }
 
+#popup1 {
+  padding: 40px;
+}
+#popup1 .cashLoan {
+  background: #F9F9F9;
+  padding: 7px;
+  border-radius: 7px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#popup1 h4 {
+  font-weight: 900;
+  margin-bottom: 13px;
+}
+#popup1 .inputs {
+  padding-right: 30px;
+}
+#popup1 .inputs .mb-3 {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#popup1 .inputs .mb-3 .form-label {
+  margin-bottom: 0;
+}
+#popup1 .inputs .mb-3 input {
+  border: 2px solid #e6e9ec;
+  outline: none;
+  height: 60px;
+  background: #FAFAFA;
+}
+#popup1 .inputs .mb-3 input:focus, #popup1 .inputs .mb-3 input:active, #popup1 .inputs .mb-3 input:hover {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+#popup1 .inputs .mb-3 .inputRange {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 99%;
+  height: 3px;
+  background: #00bcc7;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border: 15px;
+  right: 0;
+  position: absolute;
+  bottom: 0.1px;
+  right: 2px;
+}
+#popup1 .inputs .mb-3 .inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #00bcc7;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  padding: 4px;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+}
+#popup1 .inputs .mb-3 .inputRange::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #00bcc7;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  padding: 4px;
+}
+#popup1 .creditResult {
+  padding-top: 38px;
+  padding-left: 30px;
+  border-radius: 5px;
+}
+#popup1 .creditResult .result-top .monthlyPayment {
+  margin-right: 30px;
+}
+#popup1 .creditResult .result-top .monthlyPayment .digits {
+  font-size: 32px;
+  font-weight: 700;
+}
+#popup1 .creditResult .result-top .monthlyPayment .digits .fa-ruble-sign {
+  font-size: 27px;
+}
+#popup1 .creditResult .result-top .monthlyPayment .title {
+  color: #84898C;
+  font-size: 14px;
+}
+#popup1 .creditResult .result-top .rate {
+  margin-top: 33px;
+}
+#popup1 .creditResult .result-top .rate .precent {
+  font-size: 32px;
+  font-weight: 700;
+}
+#popup1 .creditResult .result-top .rate .title {
+  color: #84898C;
+  font-size: 14px;
+}
+#popup1 .creditResult .result-bottom {
+  margin-top: 20px;
+}
+#popup1 .creditResult .result-bottom button {
+  border: none;
+  background: #EA232D;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+}
+#popup1 .creditResult .result-bottom a {
+  color: #329ACA;
+}
+#popup1 .creditResult .result-bottom p {
+  font-size: 12px;
+  color: #a7abaf;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+#popup1 .getCredit {
+  background: #ea212e;
+  padding: 12px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  margin-top: 13px;
+  display: inline-block;
+}
+
+#popup2 {
+  padding: 30px;
+}
+#popup2 h2 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+#popup2 h4 {
+  margin-right: 10px;
+  font-weight: 900;
+}
+#popup2 .popup2-top {
+  margin-bottom: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#popup2 .popup2-top .limit .fa-ruble-sign {
+  font-size: 20px;
+  margin-left: 3px;
+}
+#popup2 .popup2-top .more {
+  color: #3195C3;
+  font-weight: bold;
+}
+#popup2 .popup2-body input {
+  background: #fafafa;
+  padding: 12px;
+}
+#popup2 .popup2-body button {
+  width: 100%;
+  background: #EA232D;
+  padding: 15px;
+  font-weight: 700;
+}
+#popup2 .popup2-body .imgBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#popup2 .popup2-body .imgBlock img {
+  width: 60%;
+  display: block;
+}
+#popup2 .popup2-body .imgBlock p {
+  margin-top: 30px;
+}
+
+#popup3 p {
+  font-weight: 700;
+  margin-bottom: 10px !important;
+}
+#popup3 .right img {
+  width: 36%;
+  margin-right: 7px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#popup3 .right .capital span, #popup3 .right .organ span {
+  font-weight: normal;
+}
+#popup3 .right .reestr, #popup3 .right .category {
+  font-weight: normal;
+}
+#popup3 .status span {
+  color: green;
+}
+#popup3 .blue {
+  color: #3B6ED3;
+}
+#popup3 .red {
+  color: #E32011;
+}
+#popup3 .company {
+  font-size: 22px;
+  font-weight: 700;
+}
+#popup3 .yesB, #popup3 .noB {
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+#popup3 .yesB {
+  background: #D61E10;
+  color: #fff;
+  margin-right: 10px;
+}
+#popup3 .noB {
+  background: #E3E5E9;
+  color: #000;
+}
+#popup3 .info p span {
+  color: #000;
+}
+#popup3 .info .infoDate {
+  display: inline;
+  background: #ECEFF4;
+  padding: 6px;
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   #whatNeed .col-md-4:nth-of-type(2) .item {
     height: 161px;
@@ -613,6 +917,16 @@ header .header-body .container .overlay .btn {
 @media (max-width: 767px) {
   .header-top .header-top__left .menu {
     display: none !important;
+  }
+  .header-top .burger a:visited {
+    color: black;
+  }
+
+  #popup2 .popup2-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .findout-limit .card-block {
@@ -634,6 +948,9 @@ header .header-body .container .overlay .btn {
 
   #our-offers {
     padding-bottom: 15px;
+  }
+  #our-offers .offer-items .item {
+    margin-top: 40px;
   }
   #our-offers .offer-items .owl-nav {
     top: -55px;
@@ -704,6 +1021,24 @@ header .header-body .container .overlay .btn {
   #footer .footer-bottom .row {
     text-align: center;
   }
+
+  #popup1 .inputs {
+    padding-right: 0;
+  }
+
+  #popup2 .popup2-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #popup2 .popup2-body .imgBlock {
+    margin-top: 30px;
+  }
+
+  #popup3 .right .organ {
+    margin-top: 15px;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   #calculator .container {
@@ -718,5 +1053,10 @@ header .header-body .container .overlay .btn {
   #calculator .creditResult {
     width: 90%;
     margin: 25px auto;
+  }
+
+  .fa-bars {
+    font-size: 22px;
+    margin-right: 13px;
   }
 }

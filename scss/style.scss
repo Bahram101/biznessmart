@@ -1,6 +1,7 @@
 
 body{
     color:#1F2D3D;
+    margin:0;
 }
 
 *{
@@ -10,11 +11,14 @@ a{
     text-decoration: none;
     color:#000;
 }
+a:visited, a:active{
+    color:black;
+}
 
 header{
     .header-top{
         margin-bottom: 10px;
-        margin-top: 10px;
+        padding-top: 10px;
         .header-top__left{
             .logo{
                 img{
@@ -38,7 +42,7 @@ header{
             }
         }
         .header-top__right{
-            line-height: 55px;
+            line-height: 50px;
             .btn{
                 border-radius: 7px;
                 font-weight: bold;
@@ -253,7 +257,7 @@ header{
 #calculator{
     padding-top: 50px;
     .container{
-        border: 2px solid #F9F9F9;
+        border: 2px solid #e6e9ec;
         border-radius: 7px;
         padding: 20px 35px 20px 20px;
         .cashLoan{
@@ -269,13 +273,77 @@ header{
             margin-bottom: 13px;
         }
         .inputs{
-            .form-label{
-                margin-bottom: 0;
+            .mb-3{
+                position: relative;
+                .form-label{
+                    margin-bottom: 0;
+                }
+                input{
+                    border: 2px solid #e6e9ec;
+                    outline:none;
+                    &:focus, &:active, &:hover{
+                        outline: 0 !important;
+                        outline-offset: 0 !important;
+                        box-shadow:unset;
+                    }
+                }
+                .timeCredit{
+                    position: relative;
+                }
+                .inputBlock1:after{
+                    font-family: 'FontAwesome';
+                    content:"\f158";
+                    position: absolute;
+                    bottom: 8px;
+                    right: 9px;
+                }
+                .inputBlock2:after{
+                    content:"мес.";
+                    position: absolute;
+                    bottom: 8px;
+                    right: 9px;
+                }
+                .inputRange{
+                    -webkit-appearance: none;  /* Override default CSS styles */
+                    appearance: none;
+                    width: 97%;
+                    height: 2px;
+                    background: #EA232D;
+                    outline: none;
+                    -webkit-transition: 0.2s;
+                    -webkit-transition: opacity 0.2s;
+                    transition: opacity 0.2s;
+                    border: none;
+                    right: 0;
+                    position: absolute;
+                    bottom: 0.1px;
+                    right: 2px;
+                }
+                .inputRange::-webkit-slider-thumb {
+                    -webkit-appearance: none; /* Override default look */
+                    appearance: none;
+                    width: 15px;
+                    height: 15px;
+                    background: #EA232D;
+                    //background: #fff;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border:3px solid #EA232D;
+                    padding:5px;
+                }
+
+                .inputRange::-moz-range-thumb {
+                    width: 15px;
+                    height: 15px;
+                    background: #EA232D;
+                    //background: #fff;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border:3px solid #EA232D;
+                    padding:5px;
+                }
             }
-            input{
-                border: 2px solid #e6e9ec;
-                //border: 2px solid #F5F7F8;
-            }
+
         }
         .creditResult{
             background:#F5F7F8;
@@ -656,7 +724,264 @@ header{
 
 }
 
+#popup1{
+    padding: 40px;
+    .cashLoan{
+        background: #F9F9F9;
+        padding: 7px;
+        border-radius: 7px;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    h4{
+        font-weight: 900;
+        margin-bottom: 13px;
+    }
+    .inputs{
+        padding-right:30px;
+        .mb-3{
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            .form-label{
+                margin-bottom: 0;
+            }
+            input{
+                border: 2px solid #e6e9ec;
+                outline:none;
+                height: 60px;
+                background: #FAFAFA;
+                &:focus, &:active, &:hover{
+                    outline: 0 !important;
+                    outline-offset: 0 !important;
+                    box-shadow:unset;
+                }
+            }
 
+            .inputRange{
+                -webkit-appearance: none;  /* Override default CSS styles */
+                appearance: none;
+                width: 99%;
+                height: 3px;
+                background: #00bcc7;
+                //outline: none;
+                -webkit-transition: 0.2s;
+                -webkit-transition: opacity 0.2s;
+                transition: opacity 0.2s;
+                border: 15px;
+                right: 0;
+                position: absolute;
+                bottom: 0.1px;
+                right: 2px;
+            }
+            .inputRange::-webkit-slider-thumb {
+                -webkit-appearance: none; /* Override default look */
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background: #00bcc7;
+                cursor: pointer;
+                border-radius: 50%;
+                border:6px solid #fff;
+                padding:4px;
+                box-shadow:0 7px 15px rgba(0 0 0 / 30%)
+            }
+
+            .inputRange::-moz-range-thumb {
+                width: 15px;
+                height: 15px;
+                background: #00bcc7;
+                cursor: pointer;
+                border-radius: 50%;
+                border:6px solid #fff;
+                padding:4px;
+            }
+        }
+
+    }
+    .creditResult{
+        padding-top: 38px;
+        padding-left:30px;
+        border-radius: 5px;
+        .result-top{
+            .monthlyPayment{
+                margin-right: 30px;
+                .digits{
+                    font-size:32px;
+                    font-weight: 700;
+                    .fa-ruble-sign{
+                        font-size: 27px;
+                    }
+                }
+                .title{
+                    color:#84898C;
+                    font-size:14px;
+                }
+            }
+            .rate{
+                margin-top: 33px;
+                .precent{
+                    font-size:32px;
+                    font-weight: 700;
+                }
+                .title{
+                    color:#84898C;
+                    font-size:14px;
+                }
+            }
+        }
+        .result-bottom{
+            margin-top:20px;
+            button{
+                border: none;
+                background: #EA232D;
+                color: white;
+                padding: 10px 17px;
+                border-radius: 7px;
+                font-size: 14px;
+            }
+            a{
+                //margin-left: 15px;
+                color:#329ACA;
+            }
+            p{
+                font-size:12px;
+                color:#a7abaf;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    .getCredit{
+        background: #ea212e;
+        padding: 12px;
+        border-radius: 7px;
+        color: white;
+        font-weight: bold;
+        margin-top: 13px;
+        display: inline-block;
+    }
+}
+
+#popup2{
+    padding:30px;
+    h2{
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    h4{
+        margin-right: 10px;
+        font-weight: 900;
+    }
+    .popup2-top{
+        margin-bottom: 25px;
+        justify-content: space-between;
+        .limit{
+            .fa-ruble-sign{
+                font-size: 20px;
+                margin-left: 3px;
+            }
+        }
+        .more{
+            color:#3195C3;
+            font-weight: bold;
+        }
+    }
+    .popup2-body{
+        input{
+            background: #fafafa;
+            padding:12px;
+        }
+        button{
+            width:100%;
+            background: #EA232D;
+            padding: 15px;
+            font-weight: 700;
+        }
+        .imgBlock{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width:60%;
+                display: block;
+            }
+            p{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+#popup3{
+    p{
+        font-weight: 700;
+        margin-bottom: 10px !important;
+    }
+    .right{
+        img{
+            width: 36%;
+            margin-right: 7px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .capital, .organ{
+            span{
+                font-weight: normal;
+            }
+        }
+        .reestr, .category{
+            font-weight: normal;
+        }
+    }
+    .status{
+        span{
+            color:green;
+        }
+    }
+    .blue{
+        color:#3B6ED3;
+    }
+    .red{
+        color:#E32011;
+    }
+    .company{
+        font-size:22px;
+        font-weight: 700;
+    }
+    .yesB, .noB{
+        padding:12px;
+        font-weight: bold;
+        border:none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .yesB{
+        background: #D61E10;
+        color:#fff;
+        margin-right: 10px;
+    }
+    .noB{
+        background: #E3E5E9;
+        color:#000
+    }
+    .info{
+        p{
+            span{
+                color:#000;
+            }
+        }
+        .infoDate{
+            display: inline;
+            background: #ECEFF4;
+            padding: 6px;
+            border-radius: 5px;
+        }
+    }
+}
 
 
 
@@ -679,7 +1004,18 @@ header{
                 display: none !important;
             }
         }
+        .burger{
+            a:visited {
+                color: black;
+            }
+        }
     }
+    #popup2{
+        .popup2-top{
+            flex-direction: column;
+        }
+    }
+
     .findout-limit{
         .card-block{
             width:90%;
@@ -702,6 +1038,9 @@ header{
     #our-offers{
         padding-bottom: 15px;
         .offer-items{
+            .item{
+                margin-top: 40px;
+            }
             .owl-nav{
                 top:-55px;
             }
@@ -792,7 +1131,31 @@ header{
             }
         }
     }
+
+    #popup1{
+        .inputs{
+            padding-right: 0;
+        }
+    }
+
+    #popup2{
+        .popup2-body{
+            flex-direction: column;
+            .imgBlock{
+                margin-top: 30px;
+            }
+        }
+    }
+
+    #popup3{
+        .right{
+            .organ{
+                margin-top: 15px;
+            }
+        }
+    }
 }
+
 @media(min-width:576px) and (max-width:767px){
     #calculator{
         .container{
@@ -813,5 +1176,9 @@ header{
             width: 90%;
             margin: 25px auto;
         }
+    }
+    .fa-bars{
+        font-size: 22px;
+        margin-right: 13px;
     }
 }
