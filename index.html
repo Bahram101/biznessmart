@@ -25,10 +25,10 @@
             <div class="header-top d-flex justify-content-between">
                 <div class="header-top__left d-flex">
                     <div class="logo">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo.png" alt="logo">
                     </div>
                     <ul class="menu align-items-center" >
-                        <li><a href="">Кредиты</a></li>
+                        <li><a href="">Кредиты</a> </li>
                         <li><a href="">Карт</a></li>
                         <li><a href="">Ипотека</a></li>
                         <li><a href="">Вклады</a></li>
@@ -170,20 +170,20 @@
                         <div class="inputBlock1">
                             <input type="text" class="form-control" id="sumCredit" value="50000" >
                         </div>
-                        <input type="range" class="inputRange sum" value="500000" >
+                        <input type="range" class="inputRange sum" min="50000" max="1000000" value="50000" id="range1" step="10000" >
                     </div>
                     <div class="mb-3">
                         <label for="timeCredit" class="form-label">Срок кредита</label>
                         <div class="inputBlock2">
                             <input type="text" class="form-control timeCredit" id="timeCredit" value="12" >
                         </div>
-                        <input type="range" class="inputRange time" value="12"  >
+                        <input type="range" min="1" max="60" value="12" id="range2" class="inputRange time">
                     </div>
                 </div>
                 <div class="col-md-6 creditResult">
                     <div class="result-top d-flex">
                         <div class="monthlyPayment">
-                            <div class="digits">35529 <i class="fas fa-ruble-sign"></i></div>
+                            <div class="digits" id="monthlyPay">4324 <i class="fas fa-ruble-sign"></i></div>
                             <div class="title">Ежемесячный платеж</div>
                         </div>
                         <div class="rate">
@@ -800,6 +800,7 @@
 <script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/mmenu.js"></script>
+<script src="js/main.js"></script>
 <!--<script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script>
