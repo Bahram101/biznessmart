@@ -53,7 +53,7 @@ header .header-body .container {
   background-size: cover;
   height: 400px;
   position: relative;
-  background-position: center;
+  background-position: top;
 }
 header .header-body .container .overlay {
   content: "";
